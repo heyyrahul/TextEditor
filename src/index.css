@@ -1,0 +1,41 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background: linear-gradient(135deg, #6e44b1, #ec533b, #e03759, #c04de8);
+  background-size: 400% 400%;
+animation: gradientAnimation 15s ease infinite;
+
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+
+body {
+  
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+
+
+
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background: linear-gradient(135deg, #2b1055, #7597de, #f14668, #c04de8);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+  }
+  
+}
