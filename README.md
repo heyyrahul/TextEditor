@@ -1,43 +1,59 @@
-# Steps to Implement the Text Editor
+# Font Selector and Text Editor React Component
 
-## Project Setup
+This project implements a font selector and text editor component in React. It allows users to choose from a selection of fonts and font weights, toggle italic styles, and edit text within a textarea.
 
-Create a new React + TypeScript project.
-Install necessary dependencies: react, react-dom, @types/react, @types/react-dom, axios for API calls, and styled-components for styling.
-## Component Structure
+## Features
 
-App.tsx: Main component to hold the editor and settings.
-Home.tsx:this component hold the text editor
-## Fetching Google Fonts Data
+- **Font Selection:** Choose from a variety of fonts loaded dynamically from a JSON file.
+- **Weight Selection:** Select different font weights available for each font.
+- **Italic Toggle:** Toggle between normal and italic font styles.
+- **Text Editing:** Edit text within a textarea that dynamically applies selected font and style.
+- **Data Persistence:** Save and reset text and font settings using local storage.
 
-Use the provided JSON file to map font names to their variants and URLs.
-## State Management
+1. **Install the Project:**
+   Clone and install the project's dependencies:
+   ```bash
+   git clone https://github.com/heyyrahul/TextEditor.git
 
-Use useState to manage the text, selected font family, weight, and italic state.
-Use useEffect for auto-saving and loading from localStorage.
-## Implementing Auto-Save
+   npm install
 
-Save the text, font family, and selected variant in localStorage on every change.
-Load the saved data from localStorage on component mount.
-## Handling Font Variants
+   npm start
 
-Update the font weight and italic options based on the selected font family.
-Handle the logic to select the closest available variant if the exact one is not available.
-Styling
+4. **Open the application in your browser:**
 
-Apply the selected font family, weight, and italic style to the text area using inline styles or styled-components.
-## Error Handling
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Handle invalid font variants gracefully.
-Ensure the application does not crash with invalid data from localStorage.
+## Usage
 
-# Error Handling and Improvements
-## Invalid Font Variants
+1. **Font Selection:**
+- Choose a font from the dropdown list labeled "Select Font."
 
-Validate the font variant before applying it.
-Fallback to the closest available variant if the exact one is not available.
-## Future Improvements
+2. **Weight Selection:**
+- After selecting a font, choose a font weight from the dropdown list labeled "Select Weight."
 
-Integrate with a persistent backend.
-Improve the UI design.
-Add more comprehensive unit tests.
+3. **Italic Toggle:**
+- If available for the selected font and weight, toggle the italic style using the checkbox labeled "Italic."
+
+4. **Text Editing:**
+- Edit text within the textarea. Changes will reflect the selected font, weight, and italic style.
+
+5. **Save and Reset:**
+- Use the "Save" button to persist current text and font settings to local storage.
+- Use the "Reset" button to clear text and reset font settings to defaults.
+
+## Dependencies
+
+- `react`: v17.0.2
+- `react-dom`: v17.0.2
+- `react-toastify`: v8.1.0
+
+## Project Structure
+
+- `src/`: Contains source code files.
+- `components/`: React components.
+- `Assets/`: Contains JSON file (`punt-frontend-assignment.json`) with font details.
+- `CSS/`: Contains stylesheets (`Home.css` for component styling).
+- `App.js`: Main application component.
+- `index.js`: Entry point of the application.
+
+
