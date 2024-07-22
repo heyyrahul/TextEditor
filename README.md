@@ -38,7 +38,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 - Edit text within the textarea. Changes will reflect the selected font, weight, and italic style.
 
 5. **Save and Reset:**
-- Use the "Save" button to persist current text and font settings to local storage.
+- Use the "Save" button to persist current text and font settings to local-storage.
 - Use the "Reset" button to clear text and reset font settings to defaults.
 
 ## Dependencies
