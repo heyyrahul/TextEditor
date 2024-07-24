@@ -5,7 +5,7 @@ This project implements a font selector and text editor component in React. It a
 ## Features
 
 - **Font Selection:** Choose from a variety of fonts loaded dynamically from a JSON file.
-- **Weight Selection:** Select different font weights available for each font.
+- **Weight Selection:** Select different font weights available for each fonts.
 - **Italic Toggle:** Toggle between normal and italic font styles.
 - **Text Editing:** Edit text within a textarea that dynamically applies selected font and style.
 - **Data Persistence:** Save and reset text and font settings using local storage.
